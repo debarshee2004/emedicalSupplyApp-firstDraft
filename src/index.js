@@ -1,13 +1,18 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./App";
+import TabApp from "./TabApp";
+import DesktopApp from "./DesktopApp";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const determineComponentToRender = () => {
+  const viewportWidth = window.innerWidth;
+  if (viewportWidth < 768) {
+    return <App />;
+  } else if (viewportWidth >= 768 && viewportWidth < 1024) {
+    return <TabApp />;
+  } else {
+    return <DesktopApp />;
+  }
+};
 
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+ReactDOM.render(determineComponentToRender(), document.getElementById("root"));
