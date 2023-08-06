@@ -1,7 +1,10 @@
 import React from "react";
+import Home from "./pages/home/home"
 
 const DesktopApp = () => {
-  return <div>This is the Desktop App</div>;
+  return (
+    <Home />
+  );
 };
 
 export default DesktopApp;

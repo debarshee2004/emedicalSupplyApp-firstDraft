@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import TabApp from "./TabApp";
 import DesktopApp from "./DesktopApp";
+import './index.css'
 
 const determineComponentToRender = () => {
   const viewportWidth = window.innerWidth;
