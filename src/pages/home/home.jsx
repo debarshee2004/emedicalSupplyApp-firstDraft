@@ -1,21 +1,10 @@
-import React from 'react'
-import './home.css'
+import React from 'react';
+import Navbar from '../../components/navbar/navbar.jsx'
 
-const home = () => {
+const Home = () => {
     return (
-        <div id="loading">
-            {/* Loading... */}
-        </div>
-    )
-}
+        <Navbar />
+    );
+};
 
-let preload = document.getElementById("loading");
-
-const time = 5000;
-setTimeout(runPage, time);
-
-function runPage() {
-    preload.style.display = "none";
-}
-
-export default home
+export default Home;
