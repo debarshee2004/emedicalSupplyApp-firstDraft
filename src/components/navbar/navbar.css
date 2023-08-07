@@ -1,11 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
 * {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+nav {
+    background-color: #dd5152;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 400px;
+}
+
+.logo {
+    width: 140px;
+    height: 50px;
+    background-image: url("https://i.pinimg.com/originals/0e/8f/93/0e8f9366cb396a13485588c267750ddd.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 12px;
+}
+
+/* * {
     margin: 0;
     padding: 0;
     color: white
 }
 
 a {
-    /* display: inline-block; */
+
     text-decoration: none;
 }
 
@@ -18,7 +63,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* padding-right: 20px; */
+
     overflow: hidden;
     align-items: center;
 
@@ -60,4 +105,4 @@ a {
     background-position: center;
     text-align: center;
 
-}
+} */
