@@ -1,21 +1,22 @@
-import React from 'react'
-import './loading.css'
+import React, { useEffect } from 'react';
+import './loading.css';
 
-const loading = () => {
+const Loading = () => {
+    useEffect(() => {
+        const preload = document.getElementById("loading");
+        const time = 5000;
+        setTimeout(() => {
+            if (preload) {
+                preload.style.display = "none";
+            }
+        }, time);
+    }, []);
+
     return (
         <div id="loading">
             {/* Loading... */}
         </div>
-    )
-}
+    );
+};
 
-let preload = document.getElementById("loading");
-
-const time = 5000;
-setTimeout(runPage, time);
-
-function runPage() {
-    preload.style.display = "none";
-}
-
-export default loading
+export default Loading;
