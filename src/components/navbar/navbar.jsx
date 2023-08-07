@@ -5,7 +5,7 @@ const navbar = () => {
     return (
         <nav>
             <div className="left">
-                <h2>AIvantage</h2>
+                <h2 id='Title'>AIvantage</h2>
                 <div className="logo">
                     {/* gif */}
                 </div>
